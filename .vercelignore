@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.conda/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Initialization scripts (local use only)
+init-scripts/
+
+# Node modules (if any)
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Documentation (keep main docs)
+# Keep important deployment docs
+!README.md
+!vercel.json
+!api/requirements.txt
+
+# Exclude other docs
+COMPLETE_REPORT.md
+DAILY_WORKFLOW.md
+DEPLOYMENT_GUIDE.md
+DYNAMIC_WEB_DEVELOPMENT.md
+FINAL.md
+FINAL_SUMMARY.md
+OPEN_ARCHITECTURE.md
+PYTHON_WEB_FIX_SUMMARY.md
+TASKS_COMPLETE.md
+TRANSFORMATION_SUMMARY.md
+UI_FIXES_SUMMARY.md
+VENDOR_NEUTRAL_MIGRATION.md
+VERIFICATION_REPORT.md
+
+# Exclude git scripts
+git-push-*.ps1
+git-push-*.bat
+git-push-helper.html
