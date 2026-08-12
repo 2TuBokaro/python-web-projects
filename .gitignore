@@ -88,15 +88,7 @@ assets/Stickers/
 assets/WhatsApp*/
 
 # Keep public assets
-public/assets/*
-!public/assets/logo.jpg
-!public/assets/MainYouTubeImageFinalInJPEG.jpg
-!public/assets/Red Green Minimalist Medical Logo.gif
-!public/assets/doctor-nurses-special-equipment.jpg
-!public/assets/MMpromoTextInEng.txt
-!public/assets/MMpromotextInHindi.txt
-!public/assets/CurrentObjective.txt
-!public/assets/README.md
+public/
 
 # Exclude everything in frontend and public except specific files
 frontend/*
