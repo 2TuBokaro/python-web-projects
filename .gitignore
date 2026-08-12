@@ -60,6 +60,14 @@ node_modules/
 !.vercelignore
 !README.md
 
+# Allow root-level files for Vercel
+!index.html
+!styles.css
+!app.js
+!auth.js
+!data-layer.js
+!config/
+
 # Exclude everything in frontend and public except specific files
 frontend/*
 !frontend/index.html
