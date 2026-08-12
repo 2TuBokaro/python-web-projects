@@ -3,7 +3,7 @@
 
 const DATA_LAYER_CONFIG = {
     useLocalStorage: true,
-    apiBaseUrl: 'http://localhost:8000/api'
+    apiBaseUrl: window.location.origin + '/api'  // Dynamic API URL for Vercel
 };
 
 // Storage Keys

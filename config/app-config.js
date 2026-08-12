@@ -12,9 +12,10 @@ const APP_CONFIG = {
     
     // File Configuration
     files: {
-        mediaPath: 'D:\\OtherImpDataFromLappy\\Business\\Modi',
-        staticPath: '/static/modi-media',
-        featuredImage: 'MainYouTubeImageFinalInJPEG.jpg',
+        mediaPath: 'assets/', // Changed to relative path for Vercel deployment
+        staticPath: 'assets/',
+        featuredImage: 'assets/MainYouTubeImageFinalInJPEG.jpg',
+        logoImage: 'assets/Red Green Minimalist Medical Logo.gif',
         allowedImageTypes: ['jpg', 'jpeg', 'png', 'gif', 'bmp'],
         allowedVideoTypes: ['mp4', 'mov', 'avi'],
         allowedDocTypes: ['pdf', 'docx', 'xlsx', 'txt']

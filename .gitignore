@@ -67,6 +67,36 @@ node_modules/
 !auth.js
 !data-layer.js
 !config/
+!assets/
+!public/
+
+# Exclude large assets but keep essential small files
+assets/*
+!assets/logo.jpg
+!assets/MainYouTubeImageFinalInJPEG.jpg
+!assets/Red Green Minimalist Medical Logo.gif
+!assets/doctor-nurses-special-equipment.jpg
+!assets/MMpromoTextInEng.txt
+!assets/MMpromotextInHindi.txt
+!assets/CurrentObjective.txt
+!assets/README.md
+
+# Exclude subdirectories with large files
+assets/Data/
+assets/Meta/
+assets/Stickers/
+assets/WhatsApp*/
+
+# Keep public assets
+public/assets/*
+!public/assets/logo.jpg
+!public/assets/MainYouTubeImageFinalInJPEG.jpg
+!public/assets/Red Green Minimalist Medical Logo.gif
+!public/assets/doctor-nurses-special-equipment.jpg
+!public/assets/MMpromoTextInEng.txt
+!public/assets/MMpromotextInHindi.txt
+!public/assets/CurrentObjective.txt
+!public/assets/README.md
 
 # Exclude everything in frontend and public except specific files
 frontend/*

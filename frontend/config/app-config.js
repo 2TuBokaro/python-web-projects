@@ -6,27 +6,26 @@ const APP_CONFIG = {
     
     // Data Layer Configuration
     dataLayer: {
-        useLocalStorage: true,  // Set to false to use FastAPI backend
-        apiBaseUrl: 'http://localhost:8000/api'
+        useLocalStorage: true,  // Set to false to use API
+        apiBaseUrl: window.location.origin + '/api'  // Dynamic API URL for Vercel
     },
     
     // File Configuration
     files: {
-        assetsPath: 'assets/',
+        mediaPath: 'assets/', // Changed to relative path for Vercel deployment
+        staticPath: 'assets/',
         featuredImage: 'assets/MainYouTubeImageFinalInJPEG.jpg',
         logoImage: 'assets/Red Green Minimalist Medical Logo.gif',
-        promoVideo: 'assets/MMpromoNoVoice.mov',
-        hindiPromoTextFile: 'assets/MMpromotextInHindi.txt',
-        allowedImageTypes: ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'webp'],
-        allowedVideoTypes: ['mp4', 'mov', 'avi', 'mkv', 'webm'],
-        allowedDocTypes: ['pdf', 'docx', 'xlsx', 'txt', 'doc']
+        allowedImageTypes: ['jpg', 'jpeg', 'png', 'gif', 'bmp'],
+        allowedVideoTypes: ['mp4', 'mov', 'avi'],
+        allowedDocTypes: ['pdf', 'docx', 'xlsx', 'txt']
     },
     
     // WhatsApp Configuration
     whatsapp: {
         number: '8709484805',
         message: 'Hello! I want to register for Modi Medical portal.',
-        url: 'https://wa.me/918709484805'
+        registrationUrl: '/register?source=whatsapp'
     },
     
     // Excel Configuration
@@ -43,23 +42,24 @@ const APP_CONFIG = {
         PUBLIC: 'public'
     },
     
-    // Initial Admin Credentials (password change is optional/provisioned, not forced)
+    // Initial Admin Credentials
     initialAdmin: {
         username: 'admin',
         password: 'password',
-        forcePasswordChange: false
+        forcePasswordChange: true
     },
     
     // UI Configuration
     ui: {
         itemsPerPage: 10,
-        sessionTimeout: 60 * 60 * 1000, // 60 minutes
+        sessionTimeout: 30 * 60 * 1000, // 30 minutes
         mobileBreakpoint: 768
     },
     
     // Export Configuration
     export: {
         formats: ['csv', 'json', 'xlsx'],
-        autoBackup: true
+        autoBackup: true,
+        backupInterval: 24 * 60 * 60 * 1000 // 24 hours
     }
 };
